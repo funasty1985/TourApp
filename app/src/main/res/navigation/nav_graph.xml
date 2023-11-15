@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/landmarkTypeListFrag"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/landmarkTypeListFrag"
+        android:name="com.example.fuliang_comp304sec002_lab05.LandmarkTypeListFragment"
+        android:label="fragment_type_list"
+        tools:layout="@layout/fragment_landmark_type_list"
+        >
+        <action
+            android:id="@+id/action_typeListFrag_to_landmarkListByTypeFrag"
+            app:destination="@id/landmarkListByTypeFrag"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/landmarkListByTypeFrag"
+        android:name="com.example.fuliang_comp304sec002_lab05.LandmarksByTypeFragment"
+        android:label="fragment_landmark_list"
+        tools:layout="@layout/fragment_landmarks_by_type">
+<!--        <argument-->
+<!--            android:name="landmarkType"-->
+<!--            app:argType="string"-->
+<!--            />-->
+        <action
+            android:id="@+id/action_landmarkListByTypeFrag_to_typeListFrag"
+            app:destination="@id/landmarkTypeListFrag"/>
+    </fragment>
+</navigation>
