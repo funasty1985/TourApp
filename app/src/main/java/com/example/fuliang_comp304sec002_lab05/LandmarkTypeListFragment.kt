@@ -12,7 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fuliang_comp304sec002_lab05.databinding.FragmentLandmarkTypeListBinding
 
-private const val TAG = "CrimeListFragment"
+private const val TAG = "LandmarkTypeListFragment"
 class LandmarkTypeListFragment: Fragment() {
 
     private var _binding: FragmentLandmarkTypeListBinding? = null
