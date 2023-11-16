@@ -4,5 +4,6 @@ data class Landmark(
     val name: String,
     val type: String,
     val lat: Double,
-    val lng: Double
+    val lng: Double,
+    val image: Int
 )

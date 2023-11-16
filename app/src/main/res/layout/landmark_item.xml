@@ -1,8 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/landmark_type"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="120dp"
-    android:textSize="16sp"
-    android:padding="8dp" />
+    android:layout_height="450dp"
+    android:layout_margin="4dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/landmark_image"
+            android:src="@drawable/aga_khan_museum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000" />
+
+        <TextView
+            android:id="@+id/landmark_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="testing"
+            android:textColor="@color/purple_200"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+</androidx.cardview.widget.CardView>
+

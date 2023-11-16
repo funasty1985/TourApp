@@ -12,21 +12,38 @@
         tools:layout="@layout/fragment_landmark_type_list"
         >
         <action
-            android:id="@+id/action_typeListFrag_to_landmarkListByTypeFrag"
+            android:id="@+id/action_landmarkTypeListFrag_to_landmarkListByTypeFrag"
             app:destination="@id/landmarkListByTypeFrag"/>
     </fragment>
 
     <fragment
         android:id="@+id/landmarkListByTypeFrag"
         android:name="com.example.fuliang_comp304sec002_lab05.LandmarksByTypeFragment"
-        android:label="fragment_landmark_list"
+        android:label="{landmarkType}"
         tools:layout="@layout/fragment_landmarks_by_type">
-<!--        <argument-->
-<!--            android:name="landmarkType"-->
-<!--            app:argType="string"-->
-<!--            />-->
+        <argument
+            android:name="landmarkType"
+            app:argType="string"
+            />
         <action
-            android:id="@+id/action_landmarkListByTypeFrag_to_typeListFrag"
-            app:destination="@id/landmarkTypeListFrag"/>
+            android:id="@+id/action_landmarkListByTypeFrag_to_mapFag"
+            app:destination="@id/mapFrag"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/mapFrag"
+        android:name="com.example.fuliang_comp304sec002_lab05.MapsFragment"
+        android:label="map"
+        tools:layout="@layout/fragment_maps">
+<!--        <argument-->
+<!--            android:name="lng"-->
+<!--            app:argType="float"-->
+<!--            />-->
+<!--        <argument-->
+<!--            android:name="lat"-->
+<!--            app:argType="float"-->
+<!--            />-->
+
     </fragment>
 </navigation>

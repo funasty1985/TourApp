@@ -4,11 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LandmarkTypeListFragment">
 
-    <data>
-        <variable
-            name="viewModel"
-            type="com.example.fuliang_comp304sec002_lab05.LandmarkViewModel" />
-    </data>
+<!--    <data>-->
+<!--        <variable-->
+<!--            name="viewModel"-->
+<!--            type="com.example.fuliang_comp304sec002_lab05.LandmarkViewModel" />-->
+<!--    </data>-->
 
     <LinearLayout
         android:layout_width="match_parent"
